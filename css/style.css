@@ -1,21 +1,28 @@
 
-h1 {
+body {
+    margin: 120px;
+}
+    h1 {
     text-align: center;
+    background-color: lightblue;
+}
+h3 {
+    text-align: center;
+    background-color: lightblue;
 }
 
 
 .flexContainer {
-    margin-left: 5%;
+    margin: 120;
     display:flex;
-    align-items: flex-start;
     justify-content: space-evenly;
     align-content:center;
     padding: 5%;
 }
 
 .flexContainer img {
-    max-width: 500px;
-    height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     margin: auto;
     padding: 15%;
 }
@@ -23,6 +30,8 @@ h1 {
 .flexContainer div {
     padding: 5%;
     margin:auto;
+    Width: 33%;
+    background-color: white;
 }
 
 .workGrid img {
@@ -115,11 +124,12 @@ h1 {
 */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .workGrid {
         display: flex;
-        flex-direction: column; 
-        display: grid;
+        flex-direction: column;
+        width: 100%;
+        /*display: grid;
         grid-template-rows: 300px 300px 300px 300px 300px;
         grid-template-columns: 1fr; 
         grid-template-areas: 
@@ -127,7 +137,7 @@ h1 {
         'title'
         'image'
         'description'
-        'image button'; 
+        'image button'; */
     }
 
     .projectOne {
@@ -145,7 +155,8 @@ h1 {
     .flexContainer {
         display: flex;
         flex-direction: column; 
-        display: grid;
+        width: 100%;
+        /*display: grid;
         grid-template-rows: 300px 300px 300px;
         grid-template-columns: 1fr; 
         grid-template-areas: 
@@ -154,5 +165,6 @@ h1 {
         'image'
         'description'
         'image button'; 
+    */
     }
 }
